@@ -16,14 +16,6 @@ app = Flask(__name__)
 CORS(app)
 
 
-# @cross_origin()
-# class ClientApp:
-#     def __init__(self):
-#         self.filename = "inputImage.jpg"
-#         # modelPath = 'research/ssd_mobilenet_v1_coco_2017_11_17'
-#         self.objectDetection = ApparelDetection(self.filename)
-
-
 @app.route("/")
 def home():
     return render_template("index.html")
