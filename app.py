@@ -17,11 +17,11 @@ CORS(app)
 
 
 # @cross_origin()
-class ClientApp:
-    def __init__(self):
-        self.filename = "inputImage.jpg"
-        # modelPath = 'research/ssd_mobilenet_v1_coco_2017_11_17'
-        self.objectDetection = ApparelDetection(self.filename)
+# class ClientApp:
+#     def __init__(self):
+#         self.filename = "inputImage.jpg"
+#         # modelPath = 'research/ssd_mobilenet_v1_coco_2017_11_17'
+#         self.objectDetection = ApparelDetection(self.filename)
 
 
 @app.route("/")
@@ -34,8 +34,8 @@ def home():
 def predictRoute():
     try:
         image = request.json['image']
-        decodeImage(image, clApp.filename, Settings.input_image_path)
-        result = clApp.objectDetection.detect_action()
+        decodeImage(image, Settings.input_image_name, Settings.input_image_path)
+        result = objectDetection.run_inference()
     except ValueError as val:
         print(val)
         return Response("Value not found inside  json data")
@@ -50,6 +50,6 @@ def predictRoute():
 
 # port = int(os.getenv("PORT"))
 if __name__ == "__main__":
-    clApp = ClientApp()
+    objectDetection = ApparelDetection(Settings.input_image_name)
     port = 9500
     app.run(host='0.0.0.0', port=port)
