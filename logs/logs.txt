@@ -1,0 +1,16 @@
+[07-Feb-2022 : 00:46:24] WARNING [werkzeug._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[07-Feb-2022 : 00:46:24] INFO [werkzeug._log:225]  * Running on http://192.168.1.21:9500/ (Press CTRL+C to quit)
+[07-Feb-2022 : 00:47:14] INFO [werkzeug._log:225] 192.168.1.21 - - [07/Feb/2022 00:47:14] "GET / HTTP/1.1" 200 -
+[07-Feb-2022 : 00:47:15] INFO [werkzeug._log:225] 192.168.1.21 - - [07/Feb/2022 00:47:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[07-Feb-2022 : 00:47:32] INFO [apparel_detection.yolo_detector.utils.torch_utils.select_device:49] Using CPU
+[07-Feb-2022 : 00:47:32] INFO [apparel_detection.yolo_detector.utils.torch_utils.select_device:51] 
+[07-Feb-2022 : 00:47:32] INFO [utils.torch_utils.model_info:150] Model Summary: 140 layers, 7.25731e+06 parameters, 0 gradients
+[07-Feb-2022 : 00:47:33] INFO [werkzeug._log:225] 192.168.1.21 - - [07/Feb/2022 00:47:33] "POST /predict HTTP/1.1" 200 -
+[07-Feb-2022 : 00:54:30] WARNING [werkzeug._log:225]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[07-Feb-2022 : 00:54:30] INFO [werkzeug._log:225]  * Running on http://192.168.1.21:9500/ (Press CTRL+C to quit)
+[07-Feb-2022 : 00:58:06] INFO [apparel_detection.yolo_detector.utils.torch_utils.select_device:49] Using CPU
+[07-Feb-2022 : 00:58:06] INFO [apparel_detection.yolo_detector.utils.torch_utils.select_device:51] 
+[07-Feb-2022 : 00:58:06] INFO [utils.torch_utils.model_info:150] Model Summary: 140 layers, 7.25731e+06 parameters, 0 gradients
+[07-Feb-2022 : 00:58:07] INFO [werkzeug._log:225] 192.168.1.21 - - [07/Feb/2022 00:58:07] "POST /predict HTTP/1.1" 200 -
