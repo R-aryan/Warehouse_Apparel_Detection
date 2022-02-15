@@ -1,6 +1,6 @@
 # Warehouse Apparel Detection
 
-- End to end object detection project using SSD(Single Shot Detection).
+- End to end object detection project using YOLOV5.
 - The training is done using YOLO V5 framework.
 - The application is served as an REST API using Flask.
 
